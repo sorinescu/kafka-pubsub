@@ -17,10 +17,10 @@ REQUIREMENTS = [
 ]
 
 TEST_REQUIREMENTS = [
-    'coveralls',
+    'coveralls>=1.5.1',
     'flake8>=2.4.0',
-    'pytest',
-    'pytest-cov'
+    'pytest>=4.1.1',
+    'pytest-cov>=2.6.1'
 ]
 
 
