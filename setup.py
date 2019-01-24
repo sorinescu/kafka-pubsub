@@ -17,8 +17,6 @@ REQUIREMENTS = [
 ]
 
 TEST_REQUIREMENTS = [
-    'coveralls>=1.5.1',
-    'flake8>=2.4.0',
     'pytest>=4.1.1',
     'pytest-cov>=2.6.1'
 ]
@@ -66,6 +64,7 @@ setup(
         'Topic :: System :: Networking'
     ],
     entry_points={
-        'console_scripts': ['demo = demo.demo_handler:main']
+        'console_scripts': [
+            'kafka_to_pubsub = kafka_pubsub.kafka_to_pubsub:main']
     },
 )
