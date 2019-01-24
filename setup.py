@@ -17,6 +17,7 @@ REQUIREMENTS = [
 ]
 
 TEST_REQUIREMENTS = [
+    'coveralls',
     'pytest>=4.1.1',
     'pytest-cov>=2.6.1'
 ]

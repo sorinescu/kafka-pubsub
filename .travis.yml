@@ -5,13 +5,16 @@ python:
   - "3.5"
   - "3.6"
   - "3.7"
+before_install:
+  - pip install coveralls
 install:
   - pip install -e .
 script:
   - python setup.py test
 after_success:
-  - pip install coveralls
-  - coveralls
+  - if [[ $ENV == python=3.4* ]]; then
+        coveralls;
+    fi
 notifications:
   email:
     - sorin.otescu@gmail.com
