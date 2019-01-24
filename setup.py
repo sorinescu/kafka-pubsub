@@ -16,6 +16,7 @@ REQUIREMENTS = [
 ]
 
 TEST_REQUIREMENTS = [
+    'coveralls',
     'flake8>=2.4.0',
     'pytest',
     'pytest-cov',
@@ -30,6 +31,7 @@ class PyTest(TestCommand):
         TestCommand.finalize_options(self)
         self.test_args = [
             '--strict',
+            '--cov=kafka_pubsub/',
             '-vv',
             '--tb=long',
             'tests']

@@ -6,14 +6,11 @@ Description
 
 Kafka to Google PubSub connector.
 
-.. image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
-    :target: https://travis-ci.org/rpappalax/python-project-template
+.. image:: https://travis-ci.org/sorinescu/kafka-pubsub.svg?branch=master
+    :target: https://travis-ci.org/sorinescu/kafka-pubsub
 
-.. image:: https://badge.fury.io/py/python-project-template.svg
-    :target: http://badge.fury.io/py/python-project-template
-
-.. image:: https://coveralls.io/repos/rpappalax/python-project-template/badge.svg
-    :target: https://coveralls.io/r/rpappalax/python-project-template
+.. image:: https://coveralls.io/repos/github/sorinescu/kafka-pubsub/badge.svg?branch=master
+    :target: https://coveralls.io/github/sorinescu/kafka-pubsub?branch=master
 
 
 Install
