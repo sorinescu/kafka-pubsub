@@ -11,7 +11,7 @@ script:
   - python setup.py test
 after_success:
   - pip install coveralls
-  - coveralls -v
+  - coveralls
 notifications:
   email:
     - sorin.otescu@gmail.com
