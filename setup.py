@@ -12,7 +12,8 @@ with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 REQUIREMENTS = [
-    'kafka-python>=1.4.4'
+    'kafka-python>=1.4.4',
+    'google-cloud-pubsub'
 ]
 
 TEST_REQUIREMENTS = [
@@ -29,9 +30,9 @@ class PyTest(TestCommand):
         self.test_args = [
             '--strict',
             '--cov=kafka_pubsub/',
+            '--doctest-modules',
             '-vv',
-            '--tb=long',
-            'tests']
+            '--tb=long']
         self.test_suite = True
 
     def run_tests(self):
