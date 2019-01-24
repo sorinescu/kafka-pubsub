@@ -19,10 +19,7 @@ TEST_REQUIREMENTS = [
     'coveralls',
     'flake8>=2.4.0',
     'pytest',
-    'pytest-cov',
-    'Sphinx>=1.3',
-    'sphinx_rtd_theme>=0.1.7',
-    'tox>=1.9.0'
+    'pytest-cov'
 ]
 
 
