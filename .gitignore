@@ -1,0 +1,12 @@
+.DS_Store
+/.idea
+*.sw[op]
+.Python
+venv/
+*.egg*
+*.py[cod]
+*.stamp
+.venv/
+.coverage
+.tox/
+docs/_build/
