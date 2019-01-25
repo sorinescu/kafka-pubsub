@@ -12,8 +12,7 @@ install:
 script:
   - python setup.py test
 after_success:
-  - echo $ENV
-  - if [[ $ENV == python=3.4* ]]; then
+  - if [[ `python -V` =~ 3.4 ]]; then
         coveralls;
     fi
 notifications:
