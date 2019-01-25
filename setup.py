@@ -66,6 +66,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'kafka_to_pubsub = kafka_pubsub.kafka_to_pubsub:main']
+            'kafka_to_pubsub = kafka_pubsub.kafka_to_pubsub:main',
+            'pubsub_to_kafka = kafka_pubsub.pubsub_to_kafka:main',
+        ]
     },
 )
