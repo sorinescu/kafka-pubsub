@@ -6,12 +6,13 @@ python:
   - "3.6"
   - "3.7"
 before_install:
-  - pip install coveralls
+  - pip install coveralls>=1.5.1
 install:
   - pip install -e .
 script:
   - python setup.py test
 after_success:
+  - echo $ENV
   - if [[ $ENV == python=3.4* ]]; then
         coveralls;
     fi
